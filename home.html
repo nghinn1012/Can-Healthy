@@ -1,145 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyO8f8tT0U6CgFnjFerbr2uughcRavDQ9" crossorigin="anonymous"> -->
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'EB Garamond', sans-serif;
-            
-        }
-		#home {
-			background-image: url('https://thomasnguyen.vn/wp-content/uploads/2022/09/dong-phuc-ao-blouse-thomas-nguyen-uniform-thumb.webp');
-			background-size: cover;
-			height: 100vh;
-		}
-        header {
-            text-align: center;
-            color: white;
-            padding-top: 70px;
-        }
-        h1 {
-			margin-top: 30vh;
-			color: red;
-			font-size: 48px;
-			text-align: center;
-		}
-		button {
-			background-color: #ffffff;
-			color: #000000;
-			border: none;
-			padding: 16px 32px;
-			margin: 10px;
-			font-size: 24px;
-			cursor: pointer;
-			transition: background-color 0.5s ease;
-		}
-		button:hover {
-			background-color: red;
-			color: #ffffff;
-		}
-		button a {
-			text-decoration: none;
-			color: black;
-		}
-		.header {
-			background-color: antiquewhite;
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+	<title>Home</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
 			width: 100%;
-			padding: 20px;
-			position: fixed;
-		}
-		.header .navbar {
-			padding-left: 130px;
-		}
-		.header .navbar a{
-			text-decoration: none;
-			font-weight: bold;
-			font-size: 1.5rem;
-			color: black;
-			margin:0 2rem;
-		 }
-		 
-		 .header .navbar a:hover{
-			color: red;
-		 }
-		 .row-about {
-			margin: 0 auto;
-			background-color: var(--bg);
-			display: flex;
-			flex-direction: row;
+			box-sizing: border-box;
 			align-items: center;
-			flex-wrap: nowrap; /* Ensure items stay on the same line */
-			gap: 1.5rem;
-		}
-	
-		.row-about .image img {
-			margin: 50px;
-			margin-left: 100px;
-			width: 400px;
-			height: 100%;
-		}
-	
-		.row-about .content {
-			margin-left: 100px;
-			flex-basis: 50%; /* Adjust as needed */
-		}
-	
-		.row-about .content h3 {
-			font-size: 3rem;
-			color: red;
-			text-transform: capitalize;
-			margin-bottom: 1rem;
-		}
-	
-		.row-about .content p {
-			padding: 1rem 0;
-			line-height: 2;
-			font-size: 1.6rem;
-			color: black;
-		}
-		 
-		 
-    </style>
+			justify-content: center;
+			font-weight: bold;
+			font-family: 'EB Garamond';
+		  }
+		  
+		  .section-one {
+			background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/11/13/16/gp-doctors.jpg);
+			background-size: cover;
+			background-position: center;
+			filter: brightness();
+			height: 100vh;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center; 
+		  }
+		  
+		  .container {
+			text-align: center;
+			color: white;
+		  }
+		  
+		  h1 {
+			text-transform: uppercase;
+			letter-spacing: 5px;
+			font-size: 4rem;
+			font-weight: 400;
+		  }
+		  
+		  p {
+			font-size: 1.15rem;
+			letter-spacing: 3px;
+			margin: 20px 0 40px;
+		  }
+		  
+		  .home-button {
+			color: white;
+			text-decoration: none;
+			border: 2px white solid;
+			padding: 10px 15px;
+		  }
+		  
+		  .home-button:hover,
+		  .home-button:focus {
+			background: linear-gradient(to right, #ff8a00, #da1b60);
+			outline: none;
+		  }
+		  
+		  .section-two {
+			height: 100vh;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;
+		  }
+		  
+		  .container-two {
+			display: flex;
+			padding: 50px;
+			gap: 20px;
+			width: 100%;
+		  }
+		  
+		  .content h1 {
+			font-size: 2.75rem;
+		  }
+		  
+		  .content h1::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 5px;
+			background: #D1A370; 
+		  }
+		  
+		  .content p {
+			font-size: 1.1rem;
+			letter-spacing: 2px;
+		  }
+		  
+		  .content-image img {
+			width: 300px;
+			object-fit: scale-down;
+		  }
+		  
+		  @media (max-width: 700px) {
+			.section-two {
+			  height: 100%;
+			}
+			.container-two {
+			  flex-direction: column;
+			  height: 100%;
+			}
+		  }
+		  
+		  footer {
+			width: 100%;
+			background: #212121;
+			color: white;
+			padding: 25px;
+			text-align: center;
+		  }
+		  
+		  .footer-container {
+			display: flex;
+			justify-content: center;
+		  }
+		  
+		  .footer-content {
+			margin: 0 50px 0;
+		  }
+		  
+		  .footer-content svg {
+			width: 50px;
+			fill: white;
+		  }
+		  
+		  .footer-content h6 {
+			font-size: 1.2rem;
+			font-weight: lighter;
+			margin-bottom: 25px;
+			color: #D1A370;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		  }
+		  
+		  .footer-content ul {
+			list-style: none;
+		  }
+		  
+		  .footer-content ul li {
+			margin: 25px 0;
+		  }
+		  
+		  .footer-content ul li a {
+			text-decoration: none;
+			color: white;
+		  }
+		  
+		  .footer-content ul li a:hover,
+		  .footer-content ul li a:focus {
+			color: hsl(32, 51%, 63%, 0.7);
+		  }
+		  
+		  @media (max-width: 600px) {
+			.footer-container {
+			  flex-direction: column;
+			}
+		  }	
+		  .home-button{
+			margin-left: 20px;
+			margin-right: 10px;
+		  }	  
+	</style>
 </head>
 <body>
-	<section id="home">
-		<div class="header">
-			<nav class="navbar">
-				<a href="#home">TRANG CHỦ</a>
-				<a href="#about">VỀ CHÚNG TÔI</a>
-				<a href="">SỨ MỆNH - TẦM NHÌN</a>
-				<a href="">LIÊN HỆ</a>
-			 </nav>
-		</div>
-	
-		<header>
-			<h1>Cách mới để tuyển dụng y tá</h1>
-		</header>
-	
-		<div style="display: flex; justify-content: center;">
-			<button><a href="welcome-staff.html">Tôi muốn được thuê</a></button>
-			<button>Tôi muốn thuê</button>
-		</div>
-	</section>
-	<section id="about">
-		<div class="row-about">
-
-			<div class="image">
-			   <img src="https://chuongtrinhavant.com.vn/public/file/1534b636e75ea5b4ea2f29ff6096223a.png" alt="">
+		<section class="section-one"> 
+		   <div class="container">
+			 <h1>Can Healthy</h1>
+			 <p>MỘT SẢN PHẨM CỦA USSH - VNU</p>
+			 <a href="welcome-staff.html" class="home-button">TÔI MUỐN ĐƯỢC THUÊ</a>
+			 <a href="welcome-user.html" class="home-button">TÔI MUỐN THUÊ</a>
+		   </div>  
+		 </section> 
+<!-- 		
+		<section class="section-two">
+		   <div class="container-two">
+			 <div class="container-two-content content">
+			   <h1>Title</h1>
+			   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			 </div>
+			 <div class="container-two-content content-image">
+			   <img src="https://images.unsplash.com/photo-1659269661337-7ee76a7645b5?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjE4ODcwODY&ixlib=rb-1.2.1&q=80">
+			 </div>
+		   </div>
+		</section> -->
+		  
+		  <!-- <footer>
+			<div class="footer-container">
+			  <div class="footer-content">
+				<svg viewBox="0 0 512 512" width="100" title="university">
+		 <path d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z" />
+	   </svg>
+			  </div>  
+			  <div class="footer-content">
+				<h6>Social</h6>
+				<ul>
+				  <li><a href="">Facebook</a><li>
+				  <li><a href="">Instagram</a><li>
+				  <li><a href="">Twitter</a><li>
+				</ul>
+			  </div>
+			  
+			  <div class="footer-content">
+				<h6>Service</h6>
+				<ul>
+				  <li><a href="">Compare</a><li>
+				  <li><a href="">Download</a><li>
+				  <li><a href="">Feedback</a><li>
+				  <li><a href="">Bug Report</a><li>
+				</ul>
+			  </div>
+			  
+			  <div class="footer-content">
+				<h6>Activity</h6>
+				<ul>
+				  <li><a href="">Influencers</a><li>
+				  <li><a href="">Affiliate</a><li>
+				  <li><a href="">Co-Branding</a><li>
+				  <li><a href="">Honor</a><li>
+				  <li><a href="">Give Away</a><li>
+				</ul>
+			  </div>
+			  
 			</div>
-	  
-			<div class="content">
-			   <h3>Can Healthy</h3>
-			   <p>Dịch vụ kết nối chăm sóc người đột quỵ<br>
-				  Một sản phẩm của USSH-VNU
-			   </p>
-			</div>
-	  
-		 </div>
-	</section>
+		</footer> -->
+	
 </body>
 </html>
