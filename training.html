@@ -9,13 +9,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
   <style>
     html{
         scroll-behavior: smooth;
       }
-      *{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Poppins', sans-serif;}
+      *{margin: 0;padding: 0;box-sizing: border-box;font-family: 'EB Garamond', sans-serif;}
       a{text-decoration: none;}
       a:hover{text-decoration: none;}
       li{list-style: none;}
@@ -33,14 +33,14 @@
         word-spacing: 4px;
       }
       i{
-        color: #2fccd0;
+        color: linear-gradient(to right, #ff8a00, #da1b60);
       }
       
       /* XXXXXXXXXXXXXXXXXXXXX common style ends here XXXXXXXXXXXXXXXXXXX */
       .header{
         width: 100%;
         height: 100vh;
-        background-image: linear-gradient(to right, #ff8a00, #da1b60);
+        background-image: url("https://www.prudential.com.vn/export/sites/prudential-vn/vi/.thu-vien/hinh-anh/pulse-nhip-song-khoe/song-khoe/2022/danh-thoi-gian-cho-gia-dinh-ban-da-lam-duoc-chua-1200x800-2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         clip-path: polygon(100% 0, 100% 77%, 50% 100%, 0 75%, 0 0);
@@ -55,7 +55,6 @@
         right: 0;
         opacity: 0.4;
         z-index: -1;
-        background-image: linear-gradient(to right, #ff8a00, #da1b60);
       }
       .navbar::before{
         content: "";
@@ -66,31 +65,30 @@
         right: 0;
         opacity: 0.4;
         z-index: -1;
-        background-image: linear-gradient(to left, #ff8a00, #da1b60);
       }
       .nav-item a{
-        color: #fff!important;
+        color: salmon;
         font-weight: bold;
       }
       .header-section{
         width: 100%;
         height: inherit;
-        color: #fff;
+        color: linear-gradient(#ff8a00, #da1b60);
         text-align: center;
         position: relative;
       }
-      .center-div{
+      .left-div{
         position: absolute;
         width: 100%;
         height: auto;
-        top: 50%;
-        left: 50%;
+        top: 45%;
+        left: 20%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
       }
       .header-buttons a{
-        border: 1px solid #fff;
+        border: 1px solid white;
         border-radius: 100px;
         margin: 0 5px;
         padding: 12px 35px;
@@ -103,11 +101,11 @@
       }
       .header-buttons a:hover{
         text-decoration: none;
-        color: #50d1c0;
+        color: salmon;
         background-color: #fff;
         box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
       }
-      .center-div p{
+      .left-div p{
         font-size: 1.3rem;
         padding: 10px 0 20px 0;
         color: #fff;
@@ -255,6 +253,7 @@
         transform: translateY(-20px);
         /* box-shadow: 0 0 20px 0 rgba(0,0,0,0.3); */
       }
+      
        /* ********************* our pricing ends ****************************** */
       
       
@@ -470,38 +469,42 @@
   <div class="header" id="topheader">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container text-uppercase p-2">
-        <a class="navbar-brand font-weight-bold text-white" href="#">Can Healthy</a>
+        <a class="navbar-brand font-weight-bold text-white" href="home.html" style="color: salmon !important; font-size: larger;">Can Healthy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#" style="color: salmon;">Trang chủ <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#servicediv">Lợi ích</a>
+              <a class="nav-link" href="#servicediv" style="color: salmon;">Lợi ích</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#pricingdiv">Dịch vụ</a>
+              <a class="nav-link" href="#pricingdiv" style="color: salmon;">Dịch vụ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#happyclientsdiv">Về chúng tôi</a>
+              <a class="nav-link" href="#newsletterdiv" style="color: salmon;">Về chúng tôi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contactdiv">Liên hệ</a>
+              <a class="nav-link" href="#contactdiv" style="color: salmon;">Liên hệ</a>
             </li>
-          </ul> -->
+          </ul>
         </div>
       </div>
     </nav>
     <section class="header-section">
-      <div class="center-div">
-        <h1 class="font-weight-bold">Giải pháp Can Healthy</h1>
-        <p>Dịch vụ kết nối Người tai biến đột quỵ và người chăm sóc có chuyên môn</p>
+      <div class="left-div">
+        <h1 class="font-weight-bold">Chương trình đào tạo</h1>
+        <p>Chúng tôi đào tạo người chăm sóc thông qua khoá học <br>
+            Phục hồi chức năng thần kinh cho bệnh nhân sau đột quỵ <br> đã được Bộ Y tế phê duyệt.
+        </p>
         <div class="header-buttons">
-          <a href="form.html">Đăng ký ngay</a>
+          <a href="form.html">Đăng ký bây giờ</a>
+          <a href="home.html">Quay lại trang chủ</a>
         </div>
+      </div>
       </div>
     </section>
   </div>
@@ -509,38 +512,41 @@
   <!-- ***************** header part end ************************** -->
 
   <!-- ********************* three extra header div starts ******************** -->
-  <!-- <section class="serviceoffers" id="servicediv">
+  <section class="serviceoffers" id="servicediv">
     <section class="header-extradiv">
       <div class="container">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold">Lộ trình đào tạo 2 tháng</h1>
+            </div>
         <div class="row">
           <div class="extradiv col-lg-3 col-md-3 col-12">
             <a href="#"><i class="fa-3x fa fa-desktop"></i></a>
-            <h2>CHĂM SÓC TẬN TÌNH</h2>
-            <p>Hỗ trợ, đáp ứng các nhu cầu cơ bản của người bệnh nhằm duy trì ăn uống, bài tiết, tư thế, vận động, vệ sinh cá nhân, ngủ, nghỉ; chăm sóc tâm lý; hỗ trợ điều trị và tránh các nguy cơ đột quỵ có thể tái phát
+            <h2>ĐĂNG KÝ VÀ CHỜ DUYỆT</h2>
+            <!-- <p>Hỗ trợ, đáp ứng các nhu cầu cơ bản của người bệnh nhằm duy trì ăn uống, bài tiết, tư thế, vận động, vệ sinh cá nhân, ngủ, nghỉ; chăm sóc tâm lý; hỗ trợ điều trị và tránh các nguy cơ đột quỵ có thể tái phát -->
           </p>
           </div>
           <div class="extradiv col-lg-3 col-md-3 col-12">
             <a href="#"><i class="fa-3x fa fa-trophy"></i></a>
-            <h2>SƠ CỨU KỊP THỜI</h2>
-            <p>Trong vòng 3 giờ đầu kể từ khi có triệu chứng chính là khung giờ vàng của đột quỵ. Nhân viên chăm sóc của chúng tôi sẽ thực hiện những biện pháp sơ cứu ban đầu trước khi đưa bệnh nhân đến cơ sở y tế. 
+            <h2>HOÀN THÀNH ĐÀO TẠO</h2>
+            <!-- <p>Trong vòng 3 giờ đầu kể từ khi có triệu chứng chính là khung giờ vàng của đột quỵ. Nhân viên chăm sóc của chúng tôi sẽ thực hiện những biện pháp sơ cứu ban đầu trước khi đưa bệnh nhân đến cơ sở y tế.  -->
           </p>
           </div>
           <div class="extradiv col-lg-3 col-md-3 col-12">
             <a href="#"><i class="fa-3x fa fa-magic"></i></a>
-            <h2>ĐA DẠNG DỊCH VỤ</h2>
-            <p>Chúng tôi có các dịch vụ phù hợp với nhu cầu và tính chất của từng gia đình như toàn thời gian, bán thời gian, ngày cuối tuần.
+            <h2>VƯỢT QUA BÀI TEST</h2>
+            <!-- <p>Chúng tôi có các dịch vụ phù hợp với nhu cầu và tính chất của từng gia đình như toàn thời gian, bán thời gian, ngày cuối tuần. -->
           </p>
           </div>
           <div class="extradiv col-lg-3 col-md-3 col-12">
               <a href="#"><i class="fa-3x fa fa-magic"></i></a>
-              <h2>HỖ TRỢ HỒI PHỤC</h2>
-              <p>Chúng tôi có các dịch vụ phù hợp với nhu cầu và tính chất của từng gia đình như toàn thời gian, bán thời gian, ngày cuối tuần. -->
-            <!-- </p>Người bệnh sau tai biến thường được các bác sĩ khuyến khích tập luyện vật lý trị liệu giúp tốc độ phục hồi nhanh chóng hơn. Ngoài những bài tập tại trung tâm, bệnh nhân có thể áp dụng thêm những bài tập phục hồi chức năng sau tai biến: Bài tập đứng thẳng, giữ thăng bằng cho bệnh nhân tai biến, bài tập bắc cầu, tập luyện cơ 2 bên đùi 
+              <h2>CẤP GIẤY CHỨNG NHẬN</h2>
+              <!-- <p>Người bệnh sau tai biến thường được các bác sĩ khuyến khích tập luyện vật lý trị liệu giúp tốc độ phục hồi nhanh chóng hơn. Ngoài những bài tập tại trung tâm, bệnh nhân có thể áp dụng thêm những bài tập phục hồi chức năng sau tai biến: Bài tập đứng thẳng, giữ thăng bằng cho bệnh nhân tai biến, bài tập bắc cầu, tập luyện cơ 2 bên đùi  -->
+            </p>
             </div>
         </div>
       </div>
     </section>
-  </section>  -->
+  </section>
   
   <!-- ********************* three extra header div starts ******************** -->
 
@@ -622,32 +628,35 @@
 
   <!-- ********************* project (completed) starts ****************************** -->
 
-  <!-- <section class="project-work">
+  <section class="project-work">
     <div class="container headings text-center">
-      <p class="text-center font-weight-bold">Hơn 2000 người đã tin tưởng sử dụng</p>
+      <h2 class="text-center font-weight-bold">Người chăm sóc sẽ được tiếp cận những nội dung nào trong khoá học?
+    </h2>
     </div>
     <div class="container d-flex justify-content-around align-items-center text-center">
       <div>
-        <h1 class="count">1500</h1>
-        <p>Lượt thuê dịch vụ</p>
+        <!-- <h1 class="count">1500</h1> -->
+        <p>Kiến thức chung về đột quỵ gồm cách nhận biết, <br> điều trị, cơ chế phục hồi thần kinh <br> và phòng ngừa tái phát
+        </p>
       </div>
 
       <div>
-        <h1 class="count">2500</h1>
-        <p>Người đăng ký</p>
+        <!-- <h1 class="count">2500</h1> -->
+        <p>Các bài tập phục hồi chức năng thần kinh <br> cơ bản giúp bệnh nhân sau đột quỵ <br> sớm trở về cuộc sống bình thường. </p>
       </div>
 
       <div>
-        <h1 class="count">700</h1>
-        <p>Người bệnh sử dụng</p>
+        <!-- <h1 class="count">700</h1> -->
+        <p>Các hoạt động sinh hoạt hàng ngày (ADL): <br> tắm rửa, thay quần áo, di chuyển
+        </p>
       </div>
 
       <div>
-        <h1 class="count">500</h1>
-        <p>Chăm sóc viên</p>
+        <!-- <h1 class="count">500</h1> -->
+        <p>Nuôi ăn bằng ống</p>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- ********************* project (completed) ends ****************************** -->
 
 
@@ -661,9 +670,9 @@
       <div class="row">
         <div class="col-lg-3 col-12">
           <div class="card text-center">
-            <div class="card-header">TRONG TUẦN</div>
+            <div class="card-header">NGÀY TRONG TUẦN</div>
             <div class="card-body">
-              <li>$<span class="money">250K</span>/GIỜ</li>
+              <li><span class="money">250K</span>/GIỜ</li>
             </div>
             <div class="card-footer">
               <a href="#">Đăng ký</a>
@@ -674,7 +683,7 @@
           <div class="card text-center">
             <div class="card-header">CUỐI TUẦN</div>
             <div class="card-body">
-              <li>$<span class="money">350K</span>/GIỜ</li>
+              <li><span class="money">350K</span>/GIỜ</li>
             </div>
             <div class="card-footer">
               <a href="#">Đăng ký</a>
@@ -685,7 +694,7 @@
           <div class="card text-center">
             <div class="card-header">CÁC NGÀY LỄ</div>
             <div class="card-body">
-              <li>$<span class="money">400K</span>/GIỜ</li>
+              <li><span class="money">400K</span>/GIỜ</li>
             </div>
             <div class="card-footer">
               <a href="#">Đăng ký</a>
@@ -694,9 +703,9 @@
         </div>
         <div class="col-lg-3 col-12">
           <div class="card text-center">
-            <div class="card-header">MỨC GIÁ MỚI</div>
+            <div class="card-header">BÁN THỜI GIAN</div>
             <div class="card-body">
-              <li>$<span class="money">X00K</span>/GIỜ</li>
+              <li><span class="money">200K</span>/GIỜ</li>
             </div>
             <div class="card-footer">
               <a href="#">Đăng ký</a>
@@ -705,121 +714,90 @@
         </div>
       </div>
     </div>
-  </section>
-  
-       Indicators -->
-     
-
-
-  <!-- ********************* our happy clients end ****************************** -->
-
-  <!-- ********************* contact us starts ****************************** -->
-
-  <!-- <section class="contactus" id="contactdiv">
-    <div class="container headings text-center">
-      <h1 class="text-center font-weight-bold">Liên hệ với chúng tôi</h1>
-      <p class="text-center text-captalize pt-1">Chúng tôi sẽ phản hồi bạn sớm nhất!</p>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
-
-          <form action="/action_page.php">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Tên của bạn" id="username" autocomplete="off" required>
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" placeholder="Email" id="email" autocomplete="off" required>
-            </div>
-            <div class="form-group">
-              <input type="number" class="form-control" placeholder="Điện thoại" id="mobile" autocomplete="off" required>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" rows="4" placeholder="Để lại lời nhắn" id="comment"></textarea>
-            </div>
-            <div class="d-flex justify-content-center form-button">
-              <button type="submit" class="btn btn-primary">Gửi</button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </section> --> 
-
-  <!-- ********************* contact us ends ****************************** -->
-
-  <!-- ********************* newsletter starts ****************************** -->
-
-  <!-- <section class="newsletter" id="newsletterdiv">
-    <div class="container headings text-center">
-      <h1 class="text-center font-weight-bold">Đăng ký thông tin mới</h1>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2 col-12 ">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control newsletter-input" placeholder="Email">
-            <div class="input-group-append">
-              <span class="input-group-text">Đăng ký</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </section> -->
-  <!-- ********************* newsletter ends ****************************** -->
+  
+  <!-- ********************* our pricing end ****************************** -->
 
+  <!-- ********************* our happy clients starts ****************************** -->
 
-  <!-- ********************* foter starts ****************************** -->
+  <section class="happyclients" id="happyclientsdiv">
+    <div class="container headings text-center">
+      <h1 class="text-center font-weight-bold">ĐỘI NGŨ ĐÀO TẠO</h1>
+      <!-- <p class="text-center text-captalize pt-1">CÁC NHÀ SÁNG LẬP CAN HEALTHY</p> -->
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
 
-  <!-- <footer class="footersection" id="footerdiv">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-12 footer-div">
-          <div>
-            <h3>Về Can Healthy</h3>
-            <p>The world has become so fast paced that people don't want to stand by reading a page of information to be they would much rather look at a presentstion and understand the message.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-12 footer-div">
-          <div class="footer-navlinks">
-            <h3>NAVIGATION LINKS</h3>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Price</a></li>
-            <li><a href="#">About</a></li>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 col-12 footer-div">
-          <div>
-            <h3>NEWSLETTER</h3>
-            <p>For business professionals caught between high OEM price and mediocre print and graphic output.</p>
-            <div class="container newsletter-main">
-              <div class="row">
-                <div class="col-lg-12 col-12 ">
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control newsletter-input" placeholder="Your Email">
-                    <div class="input-group-append">
-                      <span class="input-group-text">Subscribe</span>
-                    </div>
-                  </div>
-                </div>
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner container">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="box">
+                <a href="#"><img src="image/clients-thumb.jpg" class="img-fluid img-thumbnail"></a>
+                <!-- <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                <h1>Giáo sư, Tiến sĩ Nguyễn Văn Thông</h1>
+                <p>Giáo sư, Tiến sĩ Nguyễn Văn Thông đã có trên 35 năm kinh nghiệm khám, điều trị và nghiên cứu trong lĩnh vực Thần kinh. Giáo sư đã công bố 75 bài báo khoa học trên tạp chí y học trong nước và quốc tế; 
+                    15 cuốn sách chuyên khảo, giáo trình giảng day đại học và sau đại học.</p>
               </div>
             </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="box">
+                <a href="#"><img src="image/clients-thumb.jpg" class="img-fluid img-thumbnail"></a>
+                <!-- <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                <h1>ThS.BS Đào Thị Bích Hòa</h1>
+                <p>Nguyên Bác sĩ Chuyên khoa Thần kinh, Bệnh viện Bạch Mai, Giảng viên bộ môn Thần kinh, Đại học Y Hà Nội
+                </p>
+                <br>
+                <br>
+                <br>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="box">
+                  <a href="#"><img src="image/clients-thumb.jpg" class="img-fluid img-thumbnail"></a>
+                  <!-- <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                  <h1>GS.TS Nguyễn Văn Chương</h1>
+                  <p>Nguyên Chủ nhiệm Bộ môn Thần kinh học, Học viện Quân Y Từng công tác tại Bệnh viện Quân Y 103 Gần 40 năm kinh nghiệm khám và điều trị Nội thần kinh Chuyên sâu thăm khám và điều trị các bệnh: Đột quỵ não - Tai biến mạch máu não
+                </p>
+                <br>
+                </div>
+              </div>
+
+  <!-- ********************* footer ends ****************************** -->
+
+        <section class="happyclients" id="happyclientsdiv">
+                <div class="container headings text-center">
+                  <h1 class="text-center font-weight-bold">Một số hình ảnh trong khoá học</h1>
+                  <!-- <p class="text-center text-captalize pt-1">CÁC NHÀ SÁNG LẬP CAN HEALTHY</p> -->
+                </div>
+                <div>
+                     <div>
+                      <div>
+                        <div style="margin: auto;"> 
+                          <!-- <div class="box"> -->
+                            <img src="https://ump.edu.vn/uploads/ckeditor/files/image(133).png" >                            <!-- <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                            <!-- <h1>Giáo sư, Tiến sĩ Nguyễn Văn Thông</h1>
+                            <p>Giáo sư, Tiến sĩ Nguyễn Văn Thông đã có trên 35 năm kinh nghiệm khám, điều trị và nghiên cứu trong lĩnh vực Thần kinh. Giáo sư đã công bố 75 bài báo khoa học trên tạp chí y học trong nước và quốc tế;  -->
+                                <!-- 15 cuốn sách chuyên khảo, giáo trình giảng day đại học và sau đại học.</p> -->
+                          <!-- </div> -->
+                            </div>
+                      </div>
+                     </div>
+                </div>
+        </section>
           </div>
         </div>
       </div>
-      <div class="mt-5 text-center">
-        <p>Copyright &copy;2020 All rights reserved | This template is made with love by Anil Swami (www.aniweb.in)</p>
-      </div>
-      <div class="scrolltop float-right">
-        <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
-      </div> -->
     </div>
-  </footer>
+  </section>
 
-  <!-- ********************* footer ends ****************************** -->
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
