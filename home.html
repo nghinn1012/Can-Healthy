@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyO8f8tT0U6CgFnjFerbr2uughcRavDQ9" crossorigin="anonymous"> -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'EB Garamond', sans-serif;
+            
+        }
+		#home {
+			background-image: url('https://thomasnguyen.vn/wp-content/uploads/2022/09/dong-phuc-ao-blouse-thomas-nguyen-uniform-thumb.webp');
+			background-size: cover;
+			height: 100vh;
+		}
+        header {
+            text-align: center;
+            color: white;
+            padding-top: 70px;
+        }
+        h1 {
+			margin-top: 30vh;
+			color: red;
+			font-size: 48px;
+			text-align: center;
+		}
+		button {
+			background-color: #ffffff;
+			color: #000000;
+			border: none;
+			padding: 16px 32px;
+			margin: 10px;
+			font-size: 24px;
+			cursor: pointer;
+			transition: background-color 0.5s ease;
+		}
+		button:hover {
+			background-color: red;
+			color: #ffffff;
+		}
+		button a {
+			text-decoration: none;
+			color: black;
+		}
+		.header {
+			background-color: antiquewhite;
+			width: 100%;
+			padding: 20px;
+			position: fixed;
+		}
+		.header .navbar {
+			padding-left: 130px;
+		}
+		.header .navbar a{
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 1.5rem;
+			color: black;
+			margin:0 2rem;
+		 }
+		 
+		 .header .navbar a:hover{
+			color: red;
+		 }
+		 .row-about {
+			margin: 0 auto;
+			background-color: var(--bg);
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: nowrap; /* Ensure items stay on the same line */
+			gap: 1.5rem;
+		}
+	
+		.row-about .image img {
+			margin: 50px;
+			margin-left: 100px;
+			width: 400px;
+			height: 100%;
+		}
+	
+		.row-about .content {
+			margin-left: 100px;
+			flex-basis: 50%; /* Adjust as needed */
+		}
+	
+		.row-about .content h3 {
+			font-size: 3rem;
+			color: red;
+			text-transform: capitalize;
+			margin-bottom: 1rem;
+		}
+	
+		.row-about .content p {
+			padding: 1rem 0;
+			line-height: 2;
+			font-size: 1.6rem;
+			color: black;
+		}
+		 
+		 
+    </style>
+</head>
+<body>
+	<section id="home">
+		<div class="header">
+			<nav class="navbar">
+				<a href="#home">TRANG CHỦ</a>
+				<a href="#about">VỀ CHÚNG TÔI</a>
+				<a href="">SỨ MỆNH - TẦM NHÌN</a>
+				<a href="">LIÊN HỆ</a>
+			 </nav>
+		</div>
+	
+		<header>
+			<h1>Cách mới để tuyển dụng y tá</h1>
+		</header>
+	
+		<div style="display: flex; justify-content: center;">
+			<button><a href="welcome-staff.html">Tôi muốn được thuê</a></button>
+			<button>Tôi muốn thuê</button>
+		</div>
+	</section>
+	<section id="about">
+		<div class="row-about">
+
+			<div class="image">
+			   <img src="https://chuongtrinhavant.com.vn/public/file/1534b636e75ea5b4ea2f29ff6096223a.png" alt="">
+			</div>
+	  
+			<div class="content">
+			   <h3>Can Healthy</h3>
+			   <p>Dịch vụ kết nối chăm sóc người đột quỵ<br>
+				  Một sản phẩm của USSH-VNU
+			   </p>
+			</div>
+	  
+		 </div>
+	</section>
+</body>
+</html>

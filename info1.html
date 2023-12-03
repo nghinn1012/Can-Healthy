@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+<head>
+    <title>Kinh nghiệm làm việc</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            font-family: 'EB Garamond', sans-serif;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff8a00, #da1b60);
+        }
+        h2 {
+            margin-top: 2%;
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .radio-section {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .radio-item {
+            margin-top: 14px;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        label {
+            display: block;
+            padding: 20px 60px;
+            background: salmon;
+            border: 2px solid rgba(192, 29, 29, 0.411);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 400;
+            min-width: 250px;
+            white-space: nowrap;
+            position: relative;
+            transition: 0.4s ease-in-out 0s;
+        }
+        label:after,
+        label:before {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+        }
+        label:after {
+            height: 19px;
+            width: 19px;
+            border: 2px solid white;
+            left: 19px;
+            top: calc(50% - 8.7px);
+        }
+        label:before {
+            background: peru;
+            height: 20px;
+            width: 20px;
+            left: 21px;
+            top: calc(50% - 5px);
+            transform: scale(5);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.4s ease-in-out 0s;
+        }
+        input[type="radio"]:checked ~ label {
+            border-color: peru;
+        }
+        input[type="radio"]:checked ~ label::before {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+        .button-container .next-button {
+            margin-left: 5%;
+        }
+        .button-container .next-button, .before-button {
+            background: linear-gradient(to left, #ff8a00, #da1b60);;
+            color: red;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+            margin-bottom: 16px;
+            border-radius: 10px;
+        }
+        .button-container .next-button a {
+            font-family: 'EB Garamond', sans-serif;
+            text-decoration: none;
+            color: white;
+        }
+        .button-container .next-button:hover {
+            background-color: peru;
+            color: #ffffff;
+        }
+        .button-container .before-button a {
+            font-family: 'EB Garamond', sans-serif;
+            text-decoration: none;
+            color: white;
+        }
+        .button-container .before-button:hover {
+            background-color: peru;
+            color: #ffffff;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 15px;
+            margin-left: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Bạn đã từng trải qua công việc chăm sóc cho người bệnh bao giờ chưa?</h2>
+        <div class="radio-section">
+            <div class="radio-item"><input name="experience" id="radio1" type="radio"><label for="radio1">Chưa có kinh nghiệm</label></div>
+            <div class="radio-item"><input name="experience" id="radio2" type="radio"><label for="radio2">Có kinh nghiệm 6 tháng</label></div>
+            <div class="radio-item"><input name="experience" id="radio3" type="radio"><label for="radio3">Có kinh nghiệm 1 năm</label></div>
+            <div class="radio-item"><input name="experience" id="radio4" type="radio"><label for="radio4">Đã tốt nghiệp cao đẳng</label></div>
+            <div class="radio-item"><input name="experience" id="radio5" type="radio"><label for="radio5">Đang học Đại học Y</label></div>
+        </div>
+        <div class="button-container">
+            <button class="before-button"><a href="form.html">Quay lại</a></button>
+            <button class="next-button"><a href="info2.html">Tiếp theo</a></button>
+        </div>
+        <!-- <button type="submit">Gửi</button> -->
+    </form>
+</body>
+</html>

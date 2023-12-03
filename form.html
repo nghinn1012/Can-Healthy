@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+<head>
+    <title>Khảo sát</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            font-family: EB Garamond, sans-serif;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+        h2 {
+            align-items: center;
+            margin-top: 10%;
+            color: #000000;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        form div {
+            align-items: center;
+            margin-top: 8%;
+        }
+        button {
+            margin-right: 25px;
+            background-color: orange;
+            color: red;
+            border: none;
+            padding: 10px 32px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+            margin-bottom: 16px;
+            border-radius: 10px;
+        }
+        button:hover {
+            background: linear-gradient(to right, #ff8a00, #da1b60);
+        }
+        button a {
+            text-decoration: none;
+            color: white;
+        }
+        button a:hover {
+            text-decoration: none;
+        }
+
+        .text-box {
+            align-items: center;
+            background: linear-gradient(to right, #ff8a00, #da1b60);
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 16px;
+            color: white;
+            display: inline-block;
+            position: relative;
+            margin-top: 10%;
+        }
+        .text-box::before {
+            content: "\2605";
+            font-size: 24px;
+            color: orange;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+        }
+    </style>
+    <script>
+        function redirectToHome() {
+            window.location.href = 'http://127.0.0.1:5500/home.html';
+        }
+
+        function redirectToInfo1() {
+            window.location.replace('info1.html');
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <h2>Bạn có sẵn sàng cho một công việc chăm sóc bệnh nhân bị đột quỵ lâu dài không?</h2>
+        <div>
+            <button onclick="redirectToHome()"><a href="home.html">Không</a></button>
+            <button onclick="redirectToInfo1()"><a href="info1.html">Có</a></button>
+        </div>
+        <p class="text-box">Toàn thời gian, bán thời gian hoặc theo giờ.</p>
+    </form>
+</body>
+</html>
